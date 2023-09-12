@@ -286,7 +286,7 @@ footer {
     }
     .preguntas-section {
         padding: 1.5rem 1rem;
-        padding-top: 3.5rem;
+        padding-top: 1rem;
         border: 2px solid #0e262c;
     }
 
@@ -295,5 +295,6 @@ footer {
     }
     .victor-section {
        padding: 2.75rem 1rem; 
+       padding-bottom: 5rem;
     }
 }
