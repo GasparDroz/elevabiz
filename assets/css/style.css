@@ -268,6 +268,7 @@ section {
     font-weight: 800;
     font-size: 2rem;
     color: #fff;
+    text-align: center;
 }
 .gaston-section__title a {
     color: #4da7af;
@@ -328,6 +329,7 @@ section {
     }
 }
 .img-containerV2{
+    margin-top: -1rem;
     width: 475px;
     height: 450px;
     box-shadow: -16px 10px 30px 0px #234e4e;
@@ -381,6 +383,7 @@ section {
         height: 500px;
         box-shadow: -16px 10px 30px 0px #0a16168a;
         z-index: 2;
+        transform: translate( 0rem, 3em);
     }
     
     .gaston-section__imgV2 {
@@ -394,20 +397,36 @@ section {
     }
 }
 @media screen and (max-width:600px) {
+    .gaston-section {
+        padding: 0;
+    }
+    .gaston-section__containerV2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
     .img-containerV2{
         width: 300px;
         height: 400px;
+        transform: translate( 0rem, 4.5em);
     }
     
     .gaston-section__imgV2 {
         width: 350px;
-        height: 450px;
+        height: 500px;
+        padding-bottom: 3rem;
     }
     .gaston-section__paragraphV2{
         font-size: 1rem;
     }
     .text-container {
-        padding: 0.75rem;
+        gap: 0.25rem;
+        padding: 0.5rem;
+        padding-top: 2rem;
+        margin-right: -7.5%;
+        width: 95%;
     }
 }
 
@@ -502,12 +521,19 @@ section {
     }
     
     .text-container-victor {
-        width: 90%;
+        width: 95%;
         margin-left: 7.5%;
     }
 
 }
 @media screen and (max-width:600px) {
+    .victor-section__containerV2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 7.5%;
+    }
     .img-container-victorV2{
         width: 300px;
         height: 400px;
@@ -516,12 +542,20 @@ section {
     .victor-section__imgV2 {
         width: 350px;
         height: 450px;
+        display: none;
+        transform: translate( 0rem, 3.5em);
     }
     .victor-section__paragraphV2{
         font-size: 1rem;
     }
     .text-container-victor {
-        padding: 0.75rem;
+        width: 95%;
+        padding: 0.5rem;
+        padding-top: 2em;
+        margin-right: -1.5%;
+        gap: 0.5rem;
+        margin-left: 0;
+        transform: translate(-1.5rem, 0em);
     }
 }
 
