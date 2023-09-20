@@ -1,453 +1,393 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELEVABIZ</title>
-    <link rel="icon" href="./assets/src/Elevabiz-logo-sin-fondo-v2.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,200;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="https://kit.fontawesome.com/5f43da36e2.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-<body>
-    <main>
-        <header class="header">
-            <a href="https://www.instagram.com/elevabiz/" class="header-link" target="_blank">
-                <img src="./assets/src/Elevabiz-logo-sin-fondo-v1-min.png" alt="" class="header-logo">
-            </a>
-        </header>
-        <section class="hero-section">
-            <h1 class="hero-section__title">Un servicio diseñado a medida para profesionales de la salud que quieran <span class="text-blue">DUPLICAR SU FACTURACIÓN</span> sin trabajar de más, mediante nuestro método de 3 pasos en <span class="text-blue">3 meses</span></h1>
-            <a href="https://calendly.com/infoelevabiz/60min" target="_blank" class="section-button">
-                Agenda una llamada
-            </a>
-            <div class="scroll-animation">
-                <span></span>
-                <span></span>
-            </div>
-        </section>
-        <section class="section first-section">
-            
-            <!-- Begin Brevo Form -->
-            <!-- START - We recommend to place the below code in head tag of your website html  -->
-            <style>
-                @font-face {
-                    font-display: block;
-                    font-family: Roboto;
-                    src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
-                }
-            
-                @font-face {
-                    font-display: fallback;
-                    font-family: Roboto;
-                    font-weight: 600;
-                    src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
-                }
-            
-                @font-face {
-                    font-display: fallback;
-                    font-family: Roboto;
-                    font-weight: 700;
-                    src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
-                }
-            
-                #sib-container input:-ms-input-placeholder {
-                    text-align: left;
-                    font-family: "Helvetica", sans-serif;
-                    color: #c0ccda;
-                }
-            
-                #sib-container input::placeholder {
-                    text-align: left;
-                    font-family: "Helvetica", sans-serif;
-                    color: #c0ccda;
-                }
-            
-                #sib-container textarea::placeholder {
-                    text-align: left;
-                    font-family: "Helvetica", sans-serif;
-                    color: #c0ccda;
-                }
-            </style>
-            <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
-            <!--  END - We recommend to place the above code in head tag of your website html -->
-            
-            <!-- START - We recommend to place the below code where you want the form in your website html  -->
-            <div class="sib-form" style="text-align: center;
-                       background-color: #0e262c;                                 ">
-                <div id="sib-form-container" class="sib-form-container">
-                    <div id="error-message" class="sib-form-message-panel"
-                        style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
-                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-                                <path
-                                    d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
-                            </svg>
-                            <span class="sib-form-message-panel__inner-text">
-                                No hemos podido validar sus datos.
-                            </span>
-                        </div>
-                    </div>
-                    <div></div>
-                    <div id="success-message" class="sib-form-message-panel"
-                        style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
-                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-                                <path
-                                    d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
-                            </svg>
-                            <span class="sib-form-message-panel__inner-text">
-                                Ya tienes acceso a la guia!
-                            </span>
-                        </div>
-                    </div>
-                    <div></div>
-                    <div id="sib-container" class="sib-container--large sib-container--vertical"
-                        style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid; direction:ltr">
-                        <form id="sib-form" method="POST"
-                            action="https://701cee3b.sibforms.com/serve/MUIFADDc76oFhlK4ldGHpiI8lHvB6e36h7SwLoZvdIvTAxSThEHLYJc1VM1tFMpmhQ8OTIf5DdwcxnIBmpMF0WD_T2m3xdc4Nj3vQ14VOPnzTWn_9mLCbWs7-y6ydiYtB5BVEoHe6kZYRTGMBdt406E5Q0BFL9J053vDEbNaR0HkPPpgfR-_M8ee2q8oVLifzt05cPDp428cUhmc"
-                            data-type="subscription">
-                            <div style="padding: 8px 0;">
-                                <div class="sib-form-block"
-                                    style="font-size:32px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#4da7af; background-color:transparent; text-align:left">
-                                    <p>Guia gratuita</p>
-                                </div>
-                            </div>
-                            <div style="padding: 8px 0;">
-                                <div class="sib-form-block"
-                                    style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
-                                    <div class="sib-text-form-block">
-                                        <p>Descarga nuestra guia gratuita</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div style="padding: 8px 0;">
-                                <div class="sib-input sib-form-block">
-                                    <div class="form__entry entry_block">
-                                        <div class="form__label-row ">
-                                            <label class="entry__label"
-                                                style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3c4858;"
-                                                for="NOMBRE" data-required="*">Nombre</label>
-            
-                                            <div class="entry__field">
-                                                <input class="input popup-name" maxlength="200" type="text" id="NOMBRE" name="NOMBRE"
-                                                    autocomplete="off" placeholder="Introduzca su nombre" data-required="true"
-                                                    required />
-                                            </div>
-                                        </div>
-            
-                                        <label class="entry__error entry__error--primary"
-                                            style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div style="padding: 8px 0;">
-                                <div class="sib-input sib-form-block">
-                                    <div class="form__entry entry_block">
-                                        <div class="form__label-row ">
-                                            <label class="entry__label"
-                                                style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3c4858;"
-                                                for="EMAIL" data-required="*">Introduzca su dirección de e-mail para
-                                                suscribirse</label>
-            
-                                            <div class="entry__field">
-                                                <input class="input popup-email" type="text" id="EMAIL" name="EMAIL" autocomplete="off"
-                                                    placeholder="Introduzca su email" data-required="true" required />
-                                            </div>
-                                        </div>
-            
-                                        <label class="entry__error entry__error--primary"
-                                            style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div style="padding: 8px 0;">
-                                <div class="sib-form-block" style="text-align: left">
-                                    <button class="sib-form-block__button sib-form-block__button-with-loader submit-button"
-                                        style="font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#FFFFFF; background-color:#4da7af; border-radius:6px; border-width:0px;"
-                                        form="sib-form" type="submit">
-                                        <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
-                                            viewBox="0 0 512 512">
-                                            <path
-                                                d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
-                                        </svg>
-                                        QUIERO LA GUIA!
-                                    </button>
-                                </div>
-                            </div>
-            
-                            <input type="text" name="email_address_check" value="" class="input--hidden">
-                            <input type="hidden" name="locale" value="es">
-                        </form>
-                    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ELEVABIZ</title>
+        <link rel="icon" href="./assets/src/Elevabiz-logo-sin-fondo-v2.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,200;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="https://kit.fontawesome.com/5f43da36e2.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+    </head>
+
+    <body>
+        <main>
+            <header class="header">
+                <a href="https://www.instagram.com/elevabiz/" class="header-link" target="_blank">
+                    <img src="./assets/src/Elevabiz-logo-sin-fondo-v1-min.png" alt="" class="header-logo">
+                </a>
+            </header>
+            <section class="hero-section">
+                <h1 class="hero-section__title">
+                    Un servicio diseñado a medida para profesionales de la salud que quieran
+                    <span class="text-blue">DUPLICAR SU FACTURACIÓN</span> sin trabajar de más, mediante nuestro método de 3
+                    pasos en <span class="text-blue">3 meses</span>
+                </h1>
+                <a href="https://calendly.com/infoelevabiz/60min" target="_blank" class="section-button">
+                    Agenda una llamada
+                </a>
+                <div class="scroll-animation">
+                    <span></span>
+                    <span></span>
                 </div>
-            </div>
-            <!-- END - We recommend to place the below code where you want the form in your website html  -->
-            
-            <!-- START - We recommend to place the below code in footer or bottom of your website html  -->
-            <script>
-                window.REQUIRED_CODE_ERROR_MESSAGE = 'Elija un código de país';
-                window.LOCALE = 'es';
-                window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "La información que ha proporcionado no es válida.";
-
-                window.REQUIRED_ERROR_MESSAGE = "Este campo no puede quedarse vacío. ";
-
-                window.GENERIC_INVALID_MESSAGE = "La información que ha proporcionado no es válida.";
+            </section>
 
 
-
-
-                window.translation = {
-                    common: {
-                        selectedList: '{quantity} lista seleccionada',
-                        selectedLists: '{quantity} listas seleccionadas'
-                    }
-                };
-
-                var AUTOHIDE = Boolean(0);
-            </script>
-            <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
-            <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
-            <!-- End Brevo Form -->
-
-
-            <!-- El modal oculto -->
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Ya tienes acceso a la guia, puedes descargarla a traves de este link:</p>
-                    <a href="" target="_blank" class="section-button">Guia gratuita</a>
+            <section class="section recurso-section">
+                <div class="text-container">
+                    <h2>Guia gratuita</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nobis fugiat dolorum nulla alias aliquid labore consequatur illo temporibus hic, velit ut quaerat ratione rem rerum est ea facilis quis, natus doloremque nesciunt error, ex aspernatur. Eveniet accusantium aperiam incidunt iure, autem temporibus provident dignissimos recusandae impedit labore distinctio, dolore reiciendis ipsa! Voluptates, quidem tempore minima nulla beatae, doloremque iste odio veniam eos sit ad maxime.</p>
                 </div>
-            </div>
-            <script>
-                const submitButton = document.querySelector('.submit-button');
-                const emailInput = document.querySelector('.popup-email');
-                const nameInput = document.querySelector('.popup-name');
-                const modal = document.getElementById('myModal');
-                const closeButton = document.getElementsByClassName('close')[0];
-        
-                function validarEmail(email) {
-                    // Patrón de expresión regular para validar direcciones de correo electrónico
-                    const patronEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-                    return patronEmail.test(email);
-                }
-
-                submitButton.addEventListener('click', function () {
-                    const email = emailInput.value;
-        
-                    if (!validarEmail(email)) {
-                        alert('Por favor, ingresa tu dirección de correo electrónico.');
-                        return;
-                    }
-                    else {
-                       // Muestra el modal
-
-                        modal.style.display = 'block'; 
-                    }
-                    
-                });
-        
-                closeButton.addEventListener('click', function () {
-                    // Cierra el modal
-                    modal.style.display = 'none';
-                });
-        
-                // Cierra el modal si el usuario hace clic fuera de él
-                window.addEventListener('click', function (event) {
-                    if (event.target === modal) {
-                        modal.style.display = 'none';
-                    }
-                });
-            </script>
-
-            
-            <p class="first-section__paragraph italic">
-                Si sos nutricionista, personal trainer, terapeuta, psicólogo o coach, y…  
-            </p>
-            <div class="first-section__box">
-                <ul>
-                    <li><i class="fa-regular fa-circle-check"></i> No sabés comunicar tu valor y diferencial.</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Te cuesta adaptarte al nuevo mundo digital.</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Ves que otros profesionales igual o menos formados que vos están ganando mucho más dinero.</li>
-                    <li><i class="fa-regular fa-circle-check"></i> No estás trabajando con tu cliente ideal, al cual te apasionaría ayudar.</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Probaste aumentar el precio de las consultas pero no te funcionó.</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Te frustra la creación y publicación de contenido.</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Querés impactar aún más de manera positiva con tus servicios.
-                </li>
-                </ul>
-                <p class="first-section__paragraph">es hora de que <span class="text-blue">TOMES ACCIÓN.</span></p>
-            </div>
-        </section>
-
-        <section class="section second-section">
-            <h2 class="second-section__title italic">
-                Acá no hay trucos, fórmula mágica o un resultado de la noche para la mañana.                
-            </h2>
-            <p class="second-section__paragraph">
-                Nuestro objetivo es ayudarte a resolver esos problemas, poniéndonos la camiseta de tu equipo y trabajando a la par tuya, sin que tengas que dedicarle demasiadas horas a la semana y que te encargues de hacer lo que realmente te apasiona en tu campo.
-            </p>
-            <p class="second-section__paragraph">
-                No somos la típica agencia de marketing, ni queremos ser tu costo fijo mensual, sino ser esa inversión que necesitás para tener más tiempo, menos estrés y mayor impacto.
-            </p>
-            <p class="second-section__paragraph">
-                Si te sentiste identificado en aunque sea un solo punto, ¡te invitamos a que agendes una llamada 100% gratuita con alguno de nosotros! 
-            </p>
-            <p class="second-section__paragraph">
-                En esta llamada te vas a poder llevar un diagnóstico totalmente gratis de tu situación actual y un roadmap clarificador sobre los pasos que debés tomar para resolver tus problemas y alcanzar tus objetivos.
-            </p>
-        </section>
-
-
-
-        <section class="section gaston-sectionV2">
-            <h2 class="gaston-section__title">
-                ¡Hola! ¡Por acá
-                <a href="https://www.instagram.com/gastondroz/" target="_blank">Gastón</a>!
-            </h2>
-            <div class="gaston-section__containerV2">
-                <div class="img-containerV2">
-                    <img src="./assets/src/Gaston-1_con-fondo-min.jpg" alt="" class="gaston-section__imgV2">
-                </div>
-                <div class="text-container">    
-                    <p class="gaston-section__paragraphV2">
-                        Luego de encontrar mi vocación por las redes y los negocios digitales, me di cuenta que quería ayudar a personas como vos, que se encargan de impactar de manera positiva a cientos de personas en su salud y bienestar.
-                    </p>
-                    <p class="gaston-section__paragraphV2">
-                        Ahora, ¿cómo es que voy hacerlo?
-                    </p>
-                    <p class="gaston-section__paragraphV2">
-                    Llevo más de 3 años ayudando a otros negocios como diseñador y productor audiovisual especializado en creación de contenido para redes sociales, marketing y ventas. 
-                    </p>
-                </div>
-            </div>
-            <a href="https://calendly.com/infoelevabiz/60min" target="_blank" class="section-button v2">
-                Agendar una llamada
-            </a>
-        </section>
-        <section class="section victor-sectionV2">
-            <h2 class="victor-section__title">
-                ¡Ey! ¡Acá
-                <a href="https://www.instagram.com/victor_ferreyra_/"target="_blank" >Victor</a>!
-            </h2>
-            <div class="victor-section__containerV2" >
-                <div class="img-container-victorV2">
-                    <img src="./assets/src/victor-con-fondoV2.png" alt="">
-                </div>
-                <div class="text-container-victor">
-                    <p class="victor-section__paragraphV2">
-                        La búsqueda de mi propósito me llevó a explorar diversas profesiones: nutricionista, personal trainer, psicólogo,... Incluso si no tenían relación con el emprendimiento. Eran campos que me apasionaban.
-                    </p>
-                    <p class="victor-section__paragraphV2">
-                        Un giro inesperado me llevó al mundo del marketing digital, donde hace más de 3 años me capacito en comunicación, estrategia, liderazgo y ventas.
-                    </p>
-                    <p class="victor-section__paragraphV2">
-                        Luego de trabajar con negocios que no me apasionaban, nació Eleva Biz, donde el cambio en las vidas de personas como vos, se multiplica en miles más.
-                    </p>
-                </div>
-            </div>
-            <a href="https://calendly.com/infoelevabiz/60min" target="_blank" class="section-button v2">
-                Agendar una llamada
-            </a>
-        </section>
-
-        <section class="preguntas-section section">
-            <h2 class="text-blue preguntas-section__title">
-                Sabemos que pueden haberte surgido algunas preguntas, por eso te ayudamos a resolverlas a continuación:
-            </h2>
-            <div class="border accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item preguntas-section__item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" tabindex="14">
-                            ¿Cómo sé si necesito este servicio?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Si sos un profesional de la salud y querés duplicar tu facturación en tres meses, a la vez que deseás transformar la vida de tus clientes con un enfoque en impacto positivo en su salud, este servicio es para vos. 
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item preguntas-section__item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" tabindex="15">
-                            ¿Qué tipo de apoyo y recursos se proporcionan a los clientes?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Vas a contar con cuestionarios de autoevaluación, herramientas para mejorar la gestión de tus servicios, guías para grabar el contenido de manera fácil y rápida, encuentros en vivo y seguimiento personalizado.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item preguntas-section__item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" tabindex="16">
-                            Si ya ofrezco servicios a distancia, pero busco mejorar, ¿cómo me beneficiaría este servicio?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Te ofrecemos una estructura sólida para potenciar tus servicios actuales y brindar una experiencia de mayor valor para tus clientes, basada en tus conocimientos especializados.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item preguntas-section__item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour" tabindex="16">
-                            ¿Qué diferencia a este nuevo servicio de otras ofertas en el mercado?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Nuestro enfoque se centra en potenciar tus resultados mediante la definición de tu nicho, estrategia de comunicación y crecimiento personal, creando una propuesta de valor única.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item preguntas-section__item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive" tabindex="16">
-                            ¿En cuánto tiempo podré ver resultados tangibles al implementar este nuevo servicio?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFive" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Si sigues nuestro enfoque de manera consistente, vas a notar un aumento en tu facturación en 3 meses o menos.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section footer-section">
-            <p class="footer-section__paragraph">
-                ¡Te esperamos con mucha emoción porque el hecho de que tomes la decisión de agendar la llamada ya te convierte en parte de ese grupo de personas que toma <span class="text-blue">acción</span> para mejorar y crecer tanto su negocio como su vida personal!
                 
-            </p>
+                <!-- Begin Brevo Form -->
+                <div class="sib-form" style="text-align: center;
+                        background-color: #0e262c;">
+                    <div id="sib-form-container" class="sib-form-container">
+                        <div id="error-message" class="sib-form-message-panel"
+                            style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
+                            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                                    <path
+                                        d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+                                </svg>
+                                <span class="sib-form-message-panel__inner-text">
+                                    No hemos podido validar sus datos.
+                                </span>
+                            </div>
+                        </div>
+                        <div></div>
+                        <div id="success-message" class="sib-form-message-panel"
+                            style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
+                            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                                <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                                    <path
+                                        d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
+                                </svg>
+                                <span class="sib-form-message-panel__inner-text">
+                                    Ya tienes acceso a la guia!
+                                </span>
+                            </div>
+                        </div>
+                        <div></div>
+                        <div id="sib-container" class="sib-container--large sib-container--vertical"
+                            style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid; direction:ltr">
+                            <form id="sib-form" method="POST"
+                                action="https://701cee3b.sibforms.com/serve/MUIFADDc76oFhlK4ldGHpiI8lHvB6e36h7SwLoZvdIvTAxSThEHLYJc1VM1tFMpmhQ8OTIf5DdwcxnIBmpMF0WD_T2m3xdc4Nj3vQ14VOPnzTWn_9mLCbWs7-y6ydiYtB5BVEoHe6kZYRTGMBdt406E5Q0BFL9J053vDEbNaR0HkPPpgfR-_M8ee2q8oVLifzt05cPDp428cUhmc"
+                                data-type="subscription">
+                                <div style="padding: 8px 0;">
+                                    <div class="sib-form-block"
+                                        style="font-size:32px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#000000; background-color:transparent; padding-left: 1rem;">
+                                        <p>Guia gratuita</p>
+                                    </div>
+                                </div>
+                                <div style="padding: 8px 0;">
+                                    <div class="sib-form-block"
+                                        style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#3C4858; background-color:transparent;padding-left: 1rem;">
+                                        <div class="sib-text-form-block">
+                                            <p>Descarga nuestra guia gratuita</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="padding: 8px 0;">
+                                    <div class="sib-input sib-form-block">
+                                        <div class="form__entry entry_block">
+                                            <div class="form__label-row ">
+                                                <label class="entry__label"
+                                                    style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3c4858;"
+                                                    for="NOMBRE" data-required="*">Nombre</label>
 
-            <p class="footer-section__paragraph">
-                El mejor momento para invertir en vos, fue ayer. El segundo mejor momento, es <span class="text-blue">ahora</span>.
-            </p>
-            
-            <a href="https://calendly.com/infoelevabiz/60min" target="_blank" class="section-button">
-                Agenda una llamada
-            </a>
-            
-        </section>
+                                                <div class="entry__field">
+                                                    <input class="input popup-name" maxlength="200" type="text" id="NOMBRE"
+                                                        name="NOMBRE" autocomplete="off" placeholder="Introduzca su nombre"
+                                                        data-required="true" required />
+                                                </div>
+                                            </div>
+
+                                            <label class="entry__error entry__error--primary"
+                                                style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="padding: 8px 0;">
+                                    <div class="sib-input sib-form-block">
+                                        <div class="form__entry entry_block">
+                                            <div class="form__label-row ">
+                                                <label class="entry__label"
+                                                    style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3c4858;"
+                                                    for="EMAIL" data-required="*">Email:</label>
+
+                                                <div class="entry__field">
+                                                    <input class="input popup-email" type="text" id="EMAIL" name="EMAIL"
+                                                        autocomplete="off" placeholder="Introduzca su email"
+                                                        data-required="true" required />
+                                                </div>
+                                            </div>
+
+                                            <label class="entry__error entry__error--primary"
+                                                style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="padding: 8px 0;">
+                                    <div class="sib-form-block" style="text-align: left">
+                                        <button
+                                            class="sib-form-block__button sib-form-block__button-with-loader submit-button"
+                                            style="font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#FFFFFF; background-color:#4da7af; border-radius:6px; border-width:0px;"
+                                            form="sib-form" type="submit">
+                                            <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
+                                                viewBox="0 0 512 512">
+                                                <path
+                                                    d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                                            </svg>
+                                            QUIERO LA GUIA!
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <input type="text" name="email_address_check" value="" class="input--hidden">
+                                <input type="hidden" name="locale" value="es">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Brevo Form -->
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Ya tienes acceso a la guia, puedes descargarla a traves de este link:</p>
+                        <a href="" target="_blank" class="section-button">Guia gratuita</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section first-section">
+                <p class="first-section__paragraph italic">
+                    Si sos nutricionista, personal trainer, terapeuta, psicólogo o coach, y…
+                </p>
+                <div class="first-section__box">
+                    <ul>
+                        <li><i class="fa-regular fa-circle-check"></i> No sabés comunicar tu valor y diferencial.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Te cuesta adaptarte al nuevo mundo digital.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Ves que otros profesionales igual o menos formados
+                            que vos están ganando mucho más dinero.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> No estás trabajando con tu cliente ideal, al cual te
+                            apasionaría ayudar.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Probaste aumentar el precio de las consultas pero no
+                            te funcionó.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Te frustra la creación y publicación de contenido.
+                        </li>
+                        <li><i class="fa-regular fa-circle-check"></i> Querés impactar aún más de manera positiva con tus
+                            servicios.
+                        </li>
+                    </ul>
+                    <p class="first-section__paragraph">es hora de que <span class="text-blue">TOMES ACCIÓN.</span></p>
+                </div>
+            </section>
+
+            <section class="section second-section">
+                <h2 class="second-section__title italic">
+                    Acá no hay trucos, fórmula mágica o un resultado de la noche para la mañana.
+                </h2>
+                <p class="second-section__paragraph">
+                    Nuestro objetivo es ayudarte a resolver esos problemas, poniéndonos la camiseta de tu equipo y
+                    trabajando a la par tuya, sin que tengas que dedicarle demasiadas horas a la semana y que te encargues
+                    de hacer lo que realmente te apasiona en tu campo.
+                </p>
+                <p class="second-section__paragraph">
+                    No somos la típica agencia de marketing, ni queremos ser tu costo fijo mensual, sino ser esa inversión
+                    que necesitás para tener más tiempo, menos estrés y mayor impacto.
+                </p>
+                <p class="second-section__paragraph">
+                    Si te sentiste identificado en aunque sea un solo punto, ¡te invitamos a que agendes una llamada 100%
+                    gratuita con alguno de nosotros!
+                </p>
+                <p class="second-section__paragraph">
+                    En esta llamada te vas a poder llevar un diagnóstico totalmente gratis de tu situación actual y un
+                    roadmap clarificador sobre los pasos que debés tomar para resolver tus problemas y alcanzar tus
+                    objetivos.
+                </p>
+            </section>
+
+
+
+            <section class="section gaston-sectionV2">
+                <h2 class="gaston-section__title">
+                    ¡Hola! ¡Por acá
+                    <a href="https://www.instagram.com/gastondroz/" target="_blank">Gastón</a>!
+                </h2>
+                <div class="gaston-section__containerV2">
+                    <div class="img-containerV2">
+                        <img src="./assets/src/Gaston-1_con-fondo-min.jpg" alt="" class="gaston-section__imgV2">
+                    </div>
+                    <div class="text-container">
+                        <p class="gaston-section__paragraphV2">
+                            Luego de encontrar mi vocación por las redes y los negocios digitales, me di cuenta que quería
+                            ayudar a personas como vos, que se encargan de impactar de manera positiva a cientos de personas
+                            en su salud y bienestar.
+                        </p>
+                        <p class="gaston-section__paragraphV2">
+                            Ahora, ¿cómo es que voy hacerlo?
+                        </p>
+                        <p class="gaston-section__paragraphV2">
+                            Llevo más de 3 años ayudando a otros negocios como diseñador y productor audiovisual
+                            especializado en creación de contenido para redes sociales, marketing y ventas.
+                        </p>
+                    </div>
+                </div>
+                <a href="https://calendly.com/infoelevabiz/60min" target="_blank" class="section-button v2">
+                    Agendar una llamada
+                </a>
+            </section>
+            <section class="section victor-section">
+                <h2 class="victor-section__title">
+                    ¡Ey! ¡Acá
+                    <a href="https://www.instagram.com/victor_ferreyra_/" target="_blank">Victor</a>!
+                </h2>
+                <div class="victor-section__container">
+                    <div class="img-container-victor">
+                        <img src="./assets/src/victor-con-fondoV2-min.png" alt="">
+                    </div>
+                    <div class="text-container-victor">
+                        <p class="victor-section__paragraph">
+                            La búsqueda de mi propósito me llevó a explorar diversas profesiones: nutricionista, personal
+                            trainer, psicólogo,... Incluso si no tenían relación con el emprendimiento. Eran campos que me
+                            apasionaban.
+                        </p>
+                        <p class="victor-section__paragraph">
+                            Un giro inesperado me llevó al mundo del marketing digital, donde hace más de 3 años me capacito
+                            en comunicación, estrategia, liderazgo y ventas.
+                        </p>
+                        <p class="victor-section__paragraph">
+                            Luego de trabajar con negocios que no me apasionaban, nació Eleva Biz, donde el cambio en las
+                            vidas de personas como vos, se multiplica en miles más.
+                        </p>
+                    </div>
+                </div>
+                <a href="https://calendly.com/infoelevabiz/60min" target="_blank" class="section-button v2">
+                    Agendar una llamada
+                </a>
+            </section>
+
+            <section class="preguntas-section section">
+                <h2 class="text-blue preguntas-section__title">
+                    Sabemos que pueden haberte surgido algunas preguntas, por eso te ayudamos a resolverlas a continuación:
+                </h2>
+                <div class="border accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item preguntas-section__item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"
+                                tabindex="14">
+                                ¿Cómo sé si necesito este servicio?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Si sos un profesional de la salud y querés duplicar tu facturación en tres meses, a la vez
+                                que deseás transformar la vida de tus clientes con un enfoque en impacto positivo en su
+                                salud, este servicio es para vos.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item preguntas-section__item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"
+                                tabindex="15">
+                                ¿Qué tipo de apoyo y recursos se proporcionan a los clientes?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Vas a contar con cuestionarios de autoevaluación, herramientas para mejorar la gestión de
+                                tus servicios, guías para grabar el contenido de manera fácil y rápida, encuentros en vivo y
+                                seguimiento personalizado.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item preguntas-section__item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree" tabindex="16">
+                                Si ya ofrezco servicios a distancia, pero busco mejorar, ¿cómo me beneficiaría este
+                                servicio?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Te ofrecemos una estructura sólida para potenciar tus servicios actuales y brindar una
+                                experiencia de mayor valor para tus clientes, basada en tus conocimientos especializados.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item preguntas-section__item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour" tabindex="16">
+                                ¿Qué diferencia a este nuevo servicio de otras ofertas en el mercado?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Nuestro enfoque se centra en potenciar tus resultados mediante la definición de tu nicho,
+                                estrategia de comunicación y crecimiento personal, creando una propuesta de valor única.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item preguntas-section__item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive" tabindex="16">
+                                ¿En cuánto tiempo podré ver resultados tangibles al implementar este nuevo servicio?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Si sigues nuestro enfoque de manera consistente, vas a notar un aumento en tu facturación en
+                                3 meses o menos.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section footer-section">
+                <p class="footer-section__paragraph">
+                    ¡Te esperamos con mucha emoción porque el hecho de que tomes la decisión de agendar la llamada ya te
+                    convierte en parte de ese grupo de personas que toma <span class="text-blue">acción</span> para mejorar
+                    y crecer tanto su negocio como su vida personal!
+
+                </p>
+
+                <p class="footer-section__paragraph">
+                    El mejor momento para invertir en vos, fue ayer. El segundo mejor momento, es <span
+                        class="text-blue">ahora</span>.
+                </p>
+
+                <a href="https://calendly.com/infoelevabiz/60min" target="_blank" class="section-button">
+                    Agenda una llamada
+                </a>
+
+            </section>    
+        </main>
         <footer>
             <a href="https://www.instagram.com/elevabiz/" target="_blank" class="header-link">
                 <img src="./assets/src/Elevabiz-logo-sin-fondo-v1-min.png" alt="" class="header-logo">
@@ -456,13 +396,70 @@
                 Un servicio diseñado a medida para profesionales de la salud que quieran <span class="text-blue">DUPLICAR SU FACTURACIÓN</span> sin trabajar de más, mediante nuestro método de 3 pasos en <span class="text-blue">3 meses</span>
             </p>
         </footer>
-    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            const submitButton = document.querySelector('.submit-button');
+            const emailInput = document.querySelector('.popup-email');
+            const nameInput = document.querySelector('.popup-name');
+            const modal = document.getElementById('myModal');
+            const closeButton = document.getElementsByClassName('close')[0];
 
-    <script>
-        AOS.init();
-    </script>
-</body>
+            function validarEmail(email) {
+                const patronEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                return patronEmail.test(email);
+            }
+
+            submitButton.addEventListener('click', function () {
+                const email = emailInput.value;
+
+                if (!validarEmail(email)) {
+                    alert('Por favor, ingresa tu dirección de correo electrónico.');
+                    return;
+                }
+                else {
+                    modal.style.display = 'block';
+                }
+            });
+
+            closeButton.addEventListener('click', function () {
+                modal.style.display = 'none';
+            });
+
+            // Cierra el modal si el usuario hace clic fuera de él
+            window.addEventListener('click', function (event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        </script>
+
+        <script>
+            window.REQUIRED_CODE_ERROR_MESSAGE = 'Elija un código de país';
+            window.LOCALE = 'es';
+            window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "La información que ha proporcionado no es válida.";
+
+            window.REQUIRED_ERROR_MESSAGE = "Este campo no puede quedarse vacío. ";
+
+            window.GENERIC_INVALID_MESSAGE = "La información que ha proporcionado no es válida.";
+
+            window.translation = {
+                common: {
+                    selectedList: '{quantity} lista seleccionada',
+                    selectedLists: '{quantity} listas seleccionadas'
+                }
+            };
+
+            var AUTOHIDE = Boolean(0);
+        </script>
+        <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
+    </body>
 </html>
