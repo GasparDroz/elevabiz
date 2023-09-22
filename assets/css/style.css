@@ -160,13 +160,13 @@ section {
     align-items: center;
 }
 .recurso-section__text-container h2 {
-    color: #000000;
+    color: #ffffff;
     font-weight: 800;
-    font-size: 1.75rem;
-    text-align: center;
+    font-size: 2rem;
+    text-align: left;
 }
 .recurso-section__text-container p {
-    color: #222;
+    color: #ffffff;
     font-weight: 600;
     font-size: 1.25rem;
 }
@@ -183,10 +183,22 @@ section {
     z-index: 1;
     padding: 1rem;
     box-shadow: -15px 15px 35px 0px #464646;
-    gap: 0.25rem;
+    gap: 0.55rem;
+
+    background-color: transparent;
+    box-shadow: none;
 }
 input {
     color: #000 !important;
+}
+.sib-form-block__button {
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent !important;
+}
+.sib-form-block__button:hover {
+    background-color: #fff!important;
+    border: 1px solid #419292 !important;
+    color: #419292 !important;
 }
 
 #sib-container {
@@ -305,9 +317,21 @@ input {
     justify-content: center;
     font-family: 'Inter', arial;
     padding-bottom: 0;
+    color: #fff;
+    padding: 5rem 1rem;
+    padding-bottom: 0;
 }
 .italic {
     font-style: italic;
+}
+.first-section__title {
+    font-size: 2.25rem;
+    font-weight: 900;
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+}
+.first-section__description {
+    font-size: 1.4rem;
 }
 .first-section__paragraph {
     max-width: 1050px;
@@ -619,7 +643,7 @@ input {
     }
     
     .text-container-victor {
-        transform: translate( 0rem, 3em);
+        transform: translate( -1rem, 3em);
         padding-top: 2.5rem;
         width: 95%;
         margin-left: 7.5%;
@@ -628,10 +652,15 @@ input {
 }
 @media screen and (max-width:800px) {
     .img-container-victor{
-        width: 300px;
-        height: 275px;
+        
         margin: 0.825rem 0;
         margin-top: 0;
+    }
+    .text-container-victor {
+        transform: translate( -1rem, 2.5em);
+        padding-top: 2.5rem;
+        width: 95%;
+        margin-left: 7.5%;
     }
 }
 @media screen and (max-width:600px) {
@@ -685,6 +714,43 @@ input {
     font-weight: 700;
 }
 
+
+/*Calendly*/
+
+.calendly-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    overflow-y: hidden !important;
+}
+
+.calendly-inline-widget {
+    overflow-y: hidden !important;
+}
+@media screen and (max-width: 1100px) {
+    .calendly-inline-widget {
+        height: 1300px !important;
+        overflow-y: hidden !important;
+    }
+}
+@media screen and (max-width: 900px) {
+    .calendly-inline-widget {
+       
+    }
+}
+@media screen and (max-width: 800px) {
+    .calendly-inline-widget {
+        
+    }
+}
+@media screen and (max-width: 650px) {
+    .calendly-inline-widget {
+        
+    }
+}
+/*Footer*/
 .footer-section {
     padding-top: 3rem;
 }
