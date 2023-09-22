@@ -735,21 +735,6 @@ input {
         overflow-y: hidden !important;
     }
 }
-@media screen and (max-width: 900px) {
-    .calendly-inline-widget {
-       
-    }
-}
-@media screen and (max-width: 800px) {
-    .calendly-inline-widget {
-        
-    }
-}
-@media screen and (max-width: 650px) {
-    .calendly-inline-widget {
-        
-    }
-}
 /*Footer*/
 .footer-section {
     padding-top: 3rem;
