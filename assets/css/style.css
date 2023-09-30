@@ -346,30 +346,67 @@ input {
 }
 .first-section__description {
     font-size: 1.4rem;
-    padding: 0 1rem;
+    text-align: center;
 }
 .first-section__paragraph {
     max-width: 1050px;
-    text-align: center;
+    text-align: left;
     font-weight: 800;
     font-size: 1.9rem;
+    text-align: center;
 }
 .first-section__box {
-    max-width: 900px;
+    max-width: 1550px;
     font-weight: 700;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
-.first-section__box ul li {
+.first-section__list{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 1050px;
+    gap: 1rem;
+}
+
+.first-section__list-item {
     font-size: 1.25rem;
     list-style: none;
+    text-align: left;
+    outline: 1px solid #fff;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
 }
-.first-section__box ul li i {
+
+.first-section__list-item i {
     padding-right: 0.5rem;
 }
+
+@media screen and (max-width:1100px) {
+    .first-section__list {
+        width: auto;
+        max-width: 1050px;
+    }
+}
+@media screen and (max-width:800px) {
+    .first-section__title {
+        font-size: 1.75rem;
+    }
+    .first-section__description {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    .first-section__paragraph {
+        font-size: 1.5rem;
+    }
+    .first-section__list-item {
+        font-size: 1rem;
+    }
+}
+
+
 
 .second-section { 
     padding-top: 1rem;
@@ -423,7 +460,46 @@ input {
         max-width: 750px;
     }
 }
-
+@media screen and (max-width:800px) {
+    .second-section__title {
+        max-width: 950px;
+        text-align: center;
+        font-weight: 900;
+        font-size: 2.5rem;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    .second-section__cards {
+        display: flex;
+        justify-content: center;
+        max-width: 1050px;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .second-section__card {
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-radius: 1rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        font-size: 1.25rem;
+        font-weight: 700;
+        gap: 0.25rem;
+    }
+    .second-section__card:last-of-type {
+        max-width: 1010px;
+        background-color: #ececec;
+        color: #153636;
+        font-size: 1.45rem;
+    }
+    .second-section__paragraph {
+        max-width: 1050px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 1.5rem;
+}
 
 .img-container{
     width: 400px;
