@@ -241,6 +241,9 @@ input {
 }
 
 .modal-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: #fff;
     margin: auto;
     padding: 20px;
@@ -261,6 +264,9 @@ input {
     color: #000 !important;
 }
 
+.button-recurso-popup {
+    align-self: center;
+}
 .close {
     color: #000000;
     position: absolute;
@@ -303,9 +309,8 @@ input {
         padding: 0;
     }
     .recurso-section__text-container h2 {
-        text-align: center;
         font-size: 1.75rem;
-        padding-left: 0.5rem;
+        padding-left: 0.825rem;
     }
     .recurso-section__text-container p {
         text-align: left;
@@ -377,7 +382,7 @@ input {
     text-align: left;
     outline: 1px solid #fff;
     padding: 0.75rem;
-    border-radius: 0.5rem;
+    border-radius: 1.5rem;
 }
 
 .first-section__list-item i {
@@ -393,19 +398,23 @@ input {
 @media screen and (max-width:800px) {
     .first-section__title {
         font-size: 1.75rem;
+        text-align: left;
+        padding-left: 0.825rem;
     }
     .first-section__description {
         font-size: 1.25rem;
-        text-align: center;
+        text-align: left;
     }
     .first-section__paragraph {
         font-size: 1.5rem;
+    }
+    .first-section__list {
+        padding: 0 0.825rem;
     }
     .first-section__list-item {
         font-size: 1rem;
     }
 }
-
 
 
 .second-section { 
@@ -446,12 +455,6 @@ input {
     color: #153636;
     font-size: 1.45rem;
 }
-.second-section__paragraph {
-    max-width: 1050px;
-    text-align: left;
-    font-weight: 600;
-    font-size: 1.5rem;
-}
 @media screen and (max-width:1000px) {
     .second-section__card {
         max-width: 750px;
@@ -462,45 +465,23 @@ input {
 }
 @media screen and (max-width:800px) {
     .second-section__title {
-        max-width: 950px;
-        text-align: center;
-        font-weight: 900;
-        font-size: 2.5rem;
-        margin-top: 3rem;
-        margin-bottom: 1.5rem;
-    }
-    .second-section__cards {
-        display: flex;
-        justify-content: center;
-        max-width: 1050px;
-        flex-wrap: wrap;
-        gap: 1rem;
+        font-size: 2rem;
+        margin-top: 2rem;
     }
     .second-section__card {
-        background-color: transparent;
-        border: 2px solid #fff;
-        border-radius: 1rem;
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        max-width: 500px;
-        font-size: 1.25rem;
-        font-weight: 700;
-        gap: 0.25rem;
+        font-size: 1rem;
+    }
+    .second-section__card  i {
+        padding: 0.75rem;
     }
     .second-section__card:last-of-type {
-        max-width: 1010px;
-        background-color: #ececec;
-        color: #153636;
-        font-size: 1.45rem;
+        font-size: 1rem;
     }
-    .second-section__paragraph {
-        max-width: 1050px;
-        text-align: left;
-        font-weight: 600;
-        font-size: 1.5rem;
+    .second-section__button {
+        margin-top: 1.75rem;
+        margin-bottom: 1rem;
+    }
 }
-
 .img-container{
     width: 400px;
     height: 275px;
@@ -534,9 +515,9 @@ input {
 /*Seccion gaston*/
 .gaston-section {
     background: #ececec;
+    padding-top: 3.5rem;
 }
 .gaston-section__title {
-    padding-bottom: 0.5rem;
     font-weight: 800;
     font-size: 2rem;
     color: #000000;
@@ -631,6 +612,9 @@ input {
     }
 }
 @media screen and (max-width: 800px){
+    .gaston-section {
+        padding: 2.5rem 1rem;
+    }
     .gaston-section__container {
         justify-content: center;
         flex-wrap: wrap;
@@ -667,7 +651,7 @@ input {
         gap: 0.25rem;
         padding: 0.5rem;
         padding-top: 2rem;
-        margin-right: -7.5%;
+        margin-right: -5%;
         width: 95%;
     }
 }
@@ -676,6 +660,8 @@ input {
 /*Seccion Victor*/
 .victor-section {
     background: #ececec;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
 }
 .victor-section__title {
     margin-bottom: 0;
@@ -701,13 +687,6 @@ input {
     flex-direction: row;
     align-items: start;
     justify-content: center;
-}
-@media screen and (max-width: 800px){
-    .victor-section__container {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
 }
 .img-container-victor{
     width: 500px;
@@ -778,8 +757,15 @@ input {
 
 }
 @media screen and (max-width:800px) {
-    .img-container-victor{
-        
+    .victor-section {
+        padding: 2.75rem 1rem; 
+     }
+     .victor-section__container {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .img-container-victor{ 
         margin: 0.825rem 0;
         margin-top: 0;
     }
@@ -801,6 +787,7 @@ input {
     .img-container-victor{
         width: 300px;
         height: 400px;
+        transform: translate( -1rem, 5em);
     }
     
     .victor-section__img {
@@ -818,21 +805,23 @@ input {
         margin-right: -1.5%;
         gap: 0.5rem;
         margin-left: 0;
-        transform: translate(-1.5rem, 1rem);
+        transform: translate(-2rem, 1rem);
     }
 }
 
 
 /*Seccion preguntas frecuentes*/
 .preguntas-section {
+    padding: 3rem 1rem;
     padding-top: 3.5rem;
+    padding-bottom: 1rem;
     text-align: center;
 }
 .preguntas-section__title {
     font-weight: 900;
-    font-size: 1.75rem;
-    max-width: 1000px;
-    padding-bottom: 0.825rem;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    max-width: 950px;
 }
 .accordion {
     max-width: 750px;
@@ -840,10 +829,41 @@ input {
 .preguntas-section__item h2 button{
     font-weight: 700;
 }
+@media screen and (max-width: 800px) {
+    .preguntas-section {
+        padding: 3rem 1rem;
+        border: 2px solid #0e262c;
+        text-align: center;
+    }
+    .preguntas-section__title {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+}
 
+/*Footer*/
+.footer-section {
+    padding: 0 1.75rem;
+    padding-top: 2rem;
+}
+.footer-section__paragraph {
+    max-width: 950px;
+    font-weight: 700;
+    font-size: 1.75rem;
+    text-align: left;
+}
+@media screen and (max-width: 800px) {
+    .footer-section {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .footer-section__paragraph {
+        text-align: left;
+        font-size: 1.5rem;
+    }
+}
 
 /*Calendly*/
-
 .calendly-section {
     display: flex;
     justify-content: center;
@@ -861,16 +881,6 @@ input {
         height: 1300px !important;
         overflow-y: hidden !important;
     }
-}
-/*Footer*/
-.footer-section {
-    padding-top: 3rem;
-}
-.footer-section__paragraph {
-    max-width: 1050px;
-    font-weight: 600;
-    font-size: 1.5rem;
-    text-align: center;
 }
 footer {
     background-color: #fff;
@@ -907,18 +917,5 @@ footer {
     }
     .recurso-section {
         padding: 0.825rem;
-    }
-    .preguntas-section {
-        padding: 1.5rem 1rem;
-        padding-top: 1rem;
-        border: 2px solid #0e262c;
-    }
-
-    .gaston-section {
-        padding: 2.5rem 1rem;
-    }
-    .victor-section {
-       padding: 2.75rem 1rem; 
-       padding-bottom: 5rem;
     }
 }
