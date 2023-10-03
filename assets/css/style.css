@@ -418,9 +418,11 @@ input {
 
 
 .second-section { 
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem;
+    padding-bottom: 3.5rem !important;
+    
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
 }
 .second-section__title {
     max-width: 950px;
@@ -455,7 +457,15 @@ input {
     color: #153636;
     font-size: 1.45rem;
 }
+.second-section__button {
+    margin-top: 1.75rem;
+    margin-bottom: 1rem;
+}
 @media screen and (max-width:1000px) {
+    .second-section {
+        border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    }
     .second-section__card {
         max-width: 750px;
     }
@@ -464,6 +474,9 @@ input {
     }
 }
 @media screen and (max-width:800px) {
+    .second-section {
+        border-radius: 0;
+    }
     .second-section__title {
         font-size: 2rem;
         margin-top: 2rem;
@@ -477,11 +490,13 @@ input {
     .second-section__card:last-of-type {
         font-size: 1rem;
     }
-    .second-section__button {
-        margin-top: 1.75rem;
-        margin-bottom: 1rem;
-    }
 }
+.container__first-second-section {
+    background-color: #eee;
+}
+
+
+
 .img-container{
     width: 400px;
     height: 275px;
