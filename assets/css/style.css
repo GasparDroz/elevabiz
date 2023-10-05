@@ -23,6 +23,7 @@ main {
 
 
 /*Header*/
+/*
 .header {
     border-bottom: 2px solid #4da7af;
     padding-top: 0.5rem;
@@ -32,11 +33,161 @@ main {
     justify-content: center;
     margin: 0 auto;
 }
-
-
 .header-logo {
     max-width: 250px;
 }
+*/
+.topheader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    z-index: 100;
+    padding-left: 1rem;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.25rem 1rem;
+        margin: 0 auto;
+    }
+    
+    /*LOGO*/
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        max-width: 250px;
+    }
+    
+    /*MENU*/
+    
+    .menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav__li {
+        padding: 0 15px;
+    }
+    
+    
+    .menu a {
+        color: #000;
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 50px;
+        position: relative;
+        text-decoration: none;
+    }
+    
+    .menu a::after {
+        content: "";
+        background-color: #2b5f5f;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        height: 4px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    
+    .menu a.selected::after,
+    .menu a:hover::after {
+        opacity: 0.8;
+    }
+    
+    .menu a:hover {
+        color: #000;
+    }
+    
+    .open-menu, .close-menu {
+        display: none;
+    }
+    
+    .logotype {
+        display: flex;
+        justify-content: center;
+      }
+    @media screen and (max-width: 1200px) {
+        .menu a {
+            font-size: 1.1rem;
+        }
+    }
+    @media (max-width: 1000px) {
+    
+        /*MENU*/
+    
+        .menu {
+            flex-direction: column;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            align-items: center;
+            background-color:#419292;
+            height: 100%;
+            overflow-y: auto;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+            gap: 2.25rem;
+        }
+        
+        .nav__li {
+            padding: 0;
+        }
+        
+        
+        .menu a {
+            color: #fff;
+            line-height: 70px;
+            font-size: 1.75rem;
+            font-weight: 800;
+        }
+        
+        .open-menu, 
+        .close-menu {
+            display: block;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        
+        .close-menu {
+            align-self: flex-end;
+            padding: 20px 15px;
+            
+        }
+        
+        .menu_opened {
+            opacity: 1;
+            pointer-events: all;
+        }
+        
+        .open-menu:focus:not(:focus-visible),
+        .close-menu:focus:not(:focus-visible) {
+            outline: none;
+        }
+        
+        .menu a::after {
+            content: none;
+        }
+        .menu a:hover,
+        .menu a.selected {
+            
+        }
+    }
+
+
 
 .text-blue {
     color: #4da7af;
@@ -79,14 +230,15 @@ main {
     */
     background-image: linear-gradient(to top, rgba(34, 80, 78, 0.8), rgba(24, 63, 59, 0.8)), url("../src/hero-section-2.jpg");
     background-size: cover;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 8rem;
     color: #eee;
-    padding: 0 1.25rem;
+    padding: 3.5rem 1.25rem;
+    margin-top: 2rem;
 }
 .hero-section__title {
     max-width: 1150px;
@@ -884,7 +1036,7 @@ footer {
         padding: 1.75rem 1rem;
     }
     .hero-section {
-        padding: 0 1.5rem;
+        padding: 0rem 1.5rem;
     }
     .recurso-section {
         padding: 0.825rem;

@@ -20,11 +20,47 @@
     </head>
 
     <body>
+        <!--
         <header class="header">
             <a href="https://www.instagram.com/elevabiz/" class="header-link" target="_blank">
                 <img src="./assets/src/Elevabiz-logo-sin-fondo-v1-min.png" alt="" class="header-logo">
             </a>
         </header>
+        -->
+
+        <header class="topheader">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <img src="./assets/src/Elevabiz-logo-sin-fondo-v1-min.png" alt="programador">
+                </a>
+                <button class="open-menu" aria-label="Abrir menú">
+                    <img src="./assets/src/hamburger-icon.svg" alt="abrir menú">
+                </button>
+                <ul class="menu">
+                    <button class="close-menu" aria-label="Cerrar menú">
+                        <img src="./assets/src/close-icon.svg" alt="cerrar menú">
+                    </button>
+                    <li class="nav__li">
+                        <a href="#calendly" class="">
+                            Agendar llamada
+                        </a>
+                    </li>
+                    <li class="nav__li preguntas">
+                        <a href="#preguntas">
+                            Preguntas frecuentes
+                        </a>
+                    </li>
+                    <li class="nav__li"><a href="#nuestro-objetivo">
+                        Nuestro objetivo
+                    </a></li>
+                    <li class="nav__li"><a href="#quienes-somos">
+                        Sobre nosotros
+                    </a></li>
+                </ul>
+            </nav>
+    </header>
+
+
         <main>
             <section class="hero-section">
                 <h1 class="hero-section__title">
@@ -470,25 +506,50 @@
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
             crossorigin="anonymous"></script>
         <script>
-            const btn = document.getElementById('menu-btn')
-            const nav = document.getElementById('menu')
-            const navLinks = document.querySelectorAll('.menu-mobile a')
+            /*Con esto hacemos que nuestro menu se abra y se cierre en mobile*/
+const menu = document.querySelector(".menu");
+const openMenuBtn = document.querySelector(".open-menu");
+const closeMenuBtn = document.querySelector(".close-menu");
 
-            function navToggle() {
-                btn.classList.toggle('open')
-                nav.classList.toggle('hidden')
-            }
+function toggleMenu() {
+    menu.classList.toggle("menu_opened");
+}
 
-            btn.addEventListener('click', navToggle)
+openMenuBtn.addEventListener("click", toggleMenu);
+closeMenuBtn.addEventListener("click", toggleMenu);
 
-            function closeMenu() {
-                nav.style.display = 'none';
-            }
 
-            // Cierra el menú cuando se hace clic en un enlace
-            navLinks.forEach(link => {
-                link.addEventListener('click', closeMenu);
-            });
+
+
+//El siguiente codigo lo que hace es resaltar automáticamente el enlace del menú correspondiente a la sección visible en la pantalla y cerrar el menú desplegable al hacer clic en un enlace
+const menuLinks = document.querySelectorAll('.menu a[href^="#"]');
+
+const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const id = entry.target.getAttribute("id");
+        const menuLink = document.querySelector(`.menu a[href="#${id}"]`);
+  
+        if (entry.isIntersecting) {
+          document.querySelector(".menu a.selected").classList.remove("selected");
+          menuLink.classList.add("selected");
+        }
+      });
+    },
+    { rootMargin: "-30% 0px -70% 0px" }
+  );
+
+menuLinks.forEach(menuLink => {
+    menuLink.addEventListener("click", function(){
+        menu.classList.remove("menu_opened");
+    });
+
+    const hash = menuLink.getAttribute("href");
+    const target = document.querySelector(hash);
+    if (target) {
+      observer.observe(target);
+    }
+});
         </script>
         <script>
             const submitButton = document.querySelector('.submit-button');
