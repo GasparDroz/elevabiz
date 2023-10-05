@@ -1050,19 +1050,26 @@ input[type="radio"] {
     padding-top: 2rem;
 }
 .footer-section__paragraph {
-    max-width: 950px;
+    max-width: 900px;
     font-weight: 700;
     font-size: 1.75rem;
     text-align: left;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .footer-section {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        padding: 0 1.25rem;
     }
     .footer-section__paragraph {
         text-align: left;
         font-size: 1.5rem;
+        max-width: 750px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .footer-section__paragraph {
+        text-align: left;
+        font-size: 1.5rem;
+        max-width: 700px;
     }
 }
 
