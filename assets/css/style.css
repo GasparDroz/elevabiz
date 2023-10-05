@@ -38,13 +38,14 @@ main {
 }
 */
 .topheader {
-    position: fixed;
     left: 0;
     top: 0;
     background-color: #fff;
     width: 100%;
     z-index: 100;
     padding-left: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
     }
     .nav {
         display: flex;
@@ -124,6 +125,9 @@ main {
     }
     @media (max-width: 1000px) {
     
+        .topheader {
+            position: fixed;
+        }
         /*MENU*/
     
         .menu {
@@ -235,10 +239,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8rem;
+    gap: 5rem;
     color: #eee;
-    padding: 3.5rem 1.25rem;
-    margin-top: 2rem;
+    padding: 3.5rem 3rem;
 }
 .hero-section__title {
     max-width: 1150px;
@@ -255,20 +258,18 @@ main {
     background-color: #fff;
     color: #000;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
     .hero-section {
-        gap: 2rem;
-    }
-    .scroll-animation {
-        top: 87.5%;
+        padding: 2.5rem 1.5rem;
+        gap: 1.25rem;
     }
 }
 @media screen and (max-width: 600px){
     .hero-section {
-        gap: 2.5rem;
+        padding: 2rem 1.25rem;
     }
     .hero-section__title {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -705,7 +706,7 @@ input {
 .gaston-section__paragraph{
     max-width: 1050px;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.55rem;
 }
 .v2 {
     margin-top: 4.5rem;
@@ -742,6 +743,9 @@ input {
         justify-content: center;
         flex-wrap: wrap;
         gap: 1rem;
+    }
+    .gaston-section__paragraph{
+        font-size: 1.25rem;
     }
 }
 @media screen and (max-width:600px) {
@@ -849,7 +853,7 @@ input {
 .victor-section__paragraph{
     max-width: 1050px;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.55rem;
 }
 .v2 {
     margin-top: 4.5;
@@ -898,6 +902,11 @@ input {
         width: 95%;
         margin-left: 7.5%;
     }
+    .victor-section__paragraph{
+        max-width: 1050px;
+        font-weight: 700;
+        font-size: 1.25rem;
+    }
 }
 @media screen and (max-width:600px) {
     .victor-section__container {
@@ -939,16 +948,23 @@ input {
     padding-top: 3.5rem;
     padding-bottom: 1rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .preguntas-section__title {
     font-weight: 900;
     font-size: 2rem;
-    padding-bottom: 1rem;
     max-width: 950px;
+    text-align: center;
+    padding: 1.25rem;
 }
+/*
 .accordion {
     max-width: 750px;
 }
+*/
 .preguntas-section__item h2 button{
     font-weight: 700;
 }
@@ -960,9 +976,71 @@ input {
     }
     .preguntas-section__title {
         font-size: 1.5rem;
-        text-align: left;
+        padding: 1rem;
     }
 }
+
+
+.accordion {
+    margin-left: 0;
+    margin-right: 1.5rem;
+    max-width: 750px;
+}
+.accordion li {
+    list-style: none;
+    width: 100%;
+    margin: 1rem;
+    padding: 10px;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    background: #eeeeee;
+    color: #000;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+    text-align: left;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.accordion li label::before {
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+input[type="radio"] {
+    display: none;
+}
+.accordion .content {
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+    -webkit-transition: max-height 0.5s, padding 0.5s;
+    -moz-transition: max-height 0.5s, padding 0.5s;
+    -ms-transition: max-height 0.5s, padding 0.5s;
+    -o-transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::before {
+    content: '-';
+}
+
+
+
 
 /*Footer*/
 .footer-section {
@@ -1012,6 +1090,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+footer img {
+    max-width: 250px;
 }
 .footer-section__p {
     font-size: 0.9rem;
